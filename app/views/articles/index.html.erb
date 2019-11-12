@@ -1,0 +1,10 @@
+<h1>Articles</h1>
+<ul style="padding-inline-start:10px">
+<% @articles.each do |t| %>
+<li style="list-style-type:none">
+  <h2><%= link_to t.title, article_path(t)%></h2>
+  <p><%= t.content %></p>
+</li>
+<% end %>
+</ul>
+
